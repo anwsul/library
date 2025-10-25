@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background-color: rgba(128, 0, 128, 0.1);
+    margin: 50px 100px;
+}
+
+button {
+    padding: 20px 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(128, 0, 128, 0.8);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+dialog {
+    min-height: 250px;
+    padding: 20px 50px 50px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(128, 0, 128, 0.2);
+}
+
+label {
+    min-width: 50px;
+}
+
+img:hover,
+button:hover {
+    cursor: pointer;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    margin-bottom: 50px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0px 16px rgba(128, 0, 128, 0.5);
+    background-color: rgba(128, 0, 128, 0.5);
+    color: white;
+    font-style: italic;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 450px);
+    gap: 40px;
+}
+
+.add-book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-card,
+.add-book {
+    min-height: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 10px solid purple;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.book-card > .read-status {
+    margin-left: 90%;
+}
+
+.book-card > .book-title {
+    text-align: center;
+}
+
+.book-card > .author {
+    text-align: center;
+    font-style: italic;
+}
+
+.book-card > div {
+    margin-top: 120px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-card .number-of-pages {
+    font-style: italic;
+    font-weight: bold;
+}
+
+dialog > .close-dialog {
+    margin-left: 95%;
+}
+
+dialog > h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+form > div {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}

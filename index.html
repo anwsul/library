@@ -7,7 +7,43 @@
     <title>Library</title>
 </head>
 <body>
-     
+
+    <h1 class="title">Library</h1>
+
+    <div class="cards-container">
+        <!-- book cards go here-->
+
+        <!-- add book button-->
+        <div class="add-book">
+            <img src="./assets/add-button.svg" alt="">
+        </div>
+    </div>
+
+    <!-- add book dialog -->
+    <dialog>
+        <img src="./assets/close.svg" alt="" class="close-dialog">
+        <h1>Add Book</h1>
+
+        <form>
+            <div>
+                <label for="book-title" >Title</label>
+                <input type="text" id="book-title" required>
+            </div>
+
+            <div>
+                <label for="author" >Author</label>
+                <input type="text" id="author" required>
+            </div>
+
+            <div>
+                <label for="number-of-pages" >Pages</label>
+                <input type="number" id="number-of-pages" required>
+            </div>
+
+            <button>Save</button>
+        </form>
+    </dialog>
+
     <script src="./script.js"></script>
 </body>
 </html>
